@@ -43,13 +43,13 @@ class StringServer {
 ### Examples
 
 #### Multiple Queries
-![Multi Query](MultiQuery.png)
+![Multi Query](StringServerMultiQuery.png)
 the parameters get searched for the 's=bye' term, and then "bye" gets added to the strings ArrayList, which is displayed in the result
 #### No Queries
-![No Query](NoQuery.png)
+![No Query](StringServerNoQuery.png)
 the parameters get searched for the 's=' term, but none exist, so the previous values are displayed in the result
 #### One Query
-![One Query](OneQuery.png)
+![One Query](StringServerOneQuery.png)
 the parameters get searched for the 's=:)' term, and then ":)" gets added to the strings ArrayList, which is displayed in the result
 
 ## Part 2: Lab 3 Bug
@@ -66,7 +66,7 @@ static void reverseInPlace(int[] arr) {
 ### JUnit Tests
 ```Java
 @Test 
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     //works as-is
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
@@ -79,7 +79,7 @@ static void reverseInPlace(int[] arr) {
     int[] input3=new int[]{6,5,4,3,2,1};
     ArrayExamples.reverseInPlace(input3);
     assertArrayEquals(new int[]{1,2,3,4,5,6}, input3); 
-	}
+}
 ```
 
 ### Symptom
