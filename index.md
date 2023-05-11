@@ -55,7 +55,7 @@ the parameters get searched for the 's=:)' term, and then ":)" gets added to the
 ## Part 2: Lab 3 Bug
 
 ### Original Code:
-```Java
+```java
 static void reverseInPlace(int[] arr) {
   for(int i = 0; i < arr.length; i += 1) {
     arr[i] = arr[arr.length - i - 1];
@@ -64,7 +64,7 @@ static void reverseInPlace(int[] arr) {
 ```
 
 ### JUnit Tests
-```Java
+```java
 @Test 
 public void testReverseInPlace() {
     //works as-is
@@ -88,7 +88,7 @@ The code only reverses the second half onto the first half
 
 ### The Fix
 The problem is because the loop blindly reverses terms one at a time, and doesn't stop at the half. This can be fixed by only going halfway and reversing both terms, not just the left one
-```Java
+```java
 static void reverseInPlace(int[] arr) {
   for(int i = 0; i < arr.length - i - 1; i += 1) {
     int x=arr[i];
